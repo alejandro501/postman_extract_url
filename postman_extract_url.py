@@ -12,7 +12,7 @@ def extract_urls_by_keyword(input_file, keyword, output_file=None):
         if keyword.lower() in url.lower():
             matching_urls.add(url) 
 
-    matching_urls = list(matching_urls)
+    matching_urls = sorted(list(matching_urls))
 
     if output_file:
         with open(output_file, 'w') as f:
