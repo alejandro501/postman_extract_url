@@ -1,0 +1,8 @@
+# build, dist
+build/
+dist/
+*.spec
+
+# python bytecode
+__pycache__/
+*.pyc
